@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
 
+    button: {
+        margin-left: auto;
+    }
+
     nav {
         margin-left: 5rem;
         height: 5rem;
@@ -21,7 +25,7 @@
             padding: 0 0.5rem;
             height: 5rem;
             line-height: 5rem;
-            color: gray;
+            color: var(--gray-300);
             transition: color 0.2s;
 
             & + a {
@@ -29,11 +33,11 @@
             }
 
             &:hover {
-                color: #fff;
+                color: var(--white);
             }
 
             &.active {
-                color: #fff;
+                color: var(--white);
                 font-weight: bold;
             }
 
@@ -45,8 +49,12 @@
                 position: absolute;
                 bottom: 1px;
                 left: 1px;
-                background: yellow;
+                background: var(--yellow);
             }
+        }
+
+        button: {
+            margin-left: auto;
         }
     }
 }
